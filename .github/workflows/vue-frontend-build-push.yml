@@ -37,6 +37,7 @@ jobs:
                 file: ./Dockerfile
                 push: true
                 tags: ${{ secrets.DOCKERHUB_USERNAME }}/vueapp:${{ github.sha }}
+                platforms: linux/amd64
 # 파이프라인 작성이 끝나면 로컬 콘솔에서 이미지 빌드, 실행
 # docker build ~~~~~
 # docker run port(8080:8080) container_name image
