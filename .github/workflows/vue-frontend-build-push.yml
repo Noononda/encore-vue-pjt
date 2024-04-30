@@ -15,9 +15,9 @@ jobs:
             - name: Source Checkout
               uses: actions/checkout@v2
 
-
 # 4. setup node
-
+            - name: Setup node
+              uses: actions/setup-node@v2
 
 
 # 5. docker build
